@@ -1,26 +1,18 @@
 name: Package and Release
-on:
+
+on: 
   push:
     tags:
-      - '*'
+    - '*'
+
 jobs:
+
   build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Package Release
-      uses: thedoctor0/zip-release@0.7.5
-      with:
-        type: 'zip'
-        filename: 'release.xpi'
-        exclusions: '*.git*'
-  upload:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Upload Release
-      - uses: ncipollo/release-action@v1.12.0
-        with:
-          artifacts: "release.xpi"
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v3
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "release.xpi"
