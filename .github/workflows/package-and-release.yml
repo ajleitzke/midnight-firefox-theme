@@ -14,8 +14,13 @@ jobs:
         type: 'zip'
         filename: 'release.xpi'
         exclusions: '*.git*'
-    - name: Upload Release
-      uses: ncipollo/release-action@v1.12.0
-      with:
-        artifacts: "release.xpi"
-        token: ${{ secrets.GITHUB_TOKEN }}
+  upload:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Upload Release
+      - uses: ncipollo/release-action@v1.12.0
+        with:
+          artifacts: "release.xpi"
+          token: ${{ secrets.GITHUB_TOKEN }}
