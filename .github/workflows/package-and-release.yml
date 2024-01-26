@@ -13,6 +13,12 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v3
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.5
+      with:
+        type: 'zip'
+        filename: 'release.xpi'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.xpi"
