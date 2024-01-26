@@ -1,0 +1,52 @@
+{
+    "name": "Midnight - A better dark theme for Firefox.",
+    "author": "Zander Leitzke",
+    "manifest_version": 2,
+    "version": "1.1",
+    "theme": {
+        "colors": {
+            "frame": "rgba(0, 0, 0)",
+            "frame_inactive": "rgb(0, 0, 0)",
+
+            "tab_text": "rgb(255, 255, 255)",
+            "tab_background_text": "rgb(230, 230, 230)",
+
+            "tab_loading": "rgb(230, 230, 230)",
+            "icons_attention": "rgb(0, 221, 255)",
+
+            "tab_selected": "rgb(54, 54, 54)",
+            "tab_line": "rgba(255, 255, 255, 0)",
+            "toolbar": "rgb(32, 32, 32)",
+            "toolbar_top_separator": "rgb(32, 32, 32)",
+            "toolbar_bottom_separator": "rgb(32, 32, 32)",
+            "toolbar_vertical_separator": "rgb(230, 230, 230)",
+
+            "toolbar_field": "rgb(18, 18, 18)",
+            "toolbar_field_text": "rgb(230, 230, 230)",
+            "toolbar_field_border": "rgb(18, 18, 18)",
+
+            "toolbar_field_focus": "rgb(54, 54, 54)",
+            "toolbar_field_border_focus": "rgb(54, 54, 54)",
+
+            "button_background_hover": "rgba(200, 200, 200, 0.12)",
+            "button_background_active": "rgba(255, 255, 255, 0.15)",
+            "icons": "rgb(230, 230, 230)",
+            "bookmark_text": "rgb(230, 230, 230)",
+
+            "popup": "rgb(54, 54, 54)",
+            "popup_text": "rgb(210, 210, 210)",
+            "popup_border": "rgb(54, 54, 54)",
+            "popup_highlight": "#21252B",
+            "popup_highlight_text": "rgb(255, 255, 255)",
+
+            "ntp_background": "rgb(18, 18, 18)",
+            "ntp_text": "rgb(230, 230, 230)",
+
+            "sidebar": "rgb(32, 32, 32)",
+            "sidebar_text": "rgb(230, 230, 230)",
+            "sidebar_border": "rgb(18, 18, 18)",
+            "sidebar_highlight": "#21252B",
+            "sidebar_highlight_text": "rgb(170, 170, 170)"
+        }
+    }
+}
