@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Zip manifest.json
-      run: zip -r release.xpi manifest.json
+      run: zip -1 -r release.xpi manifest.json
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "release.xpi"
